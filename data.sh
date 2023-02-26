@@ -2,6 +2,9 @@
 
 source .env
 
+mkdir users
+mkdir pretty
+
 function get_token {
   local response=$(curl -s -X POST \
     https://api.intra.42.fr/oauth/token \
