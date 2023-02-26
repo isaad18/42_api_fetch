@@ -15,9 +15,12 @@
 </p>
  
 ## Info
-This script gets all the info of all users in a single campus using the campus ID, this script due to the limited number of requests given by 42 application so it runs 1 request every 4 seconds which is 900 requests per hour. Users info will be given back in the form of JSON file, info of the student will include basic info of the student, projects done in progress, and the date of correction, cursus users info such as skills, blackhole and kickoff dates for the cursus and the same info for the piscine stats and projects, languages of the user, his/her achievements, titles, campus info, partnerships and other info.
-```NOTE: this script will take time while running depending of the number of users in the campus, for example if there is 900 users registered in the campus it will take one our to finish```
+This script gets all the info of all users in a single campus using the campus ID, this script due to the limited number of requests given by 42 application so it runs 1 request every 4 seconds which is 900 requests per hour. Users info will be given back in the form of JSON file, info of the student will include basic info of the student, projects done in progress, and the date of correction, cursus users info such as skills, blackhole and kickoff dates for the cursus and the same info for the piscine stats and projects, languages of the user, his/her achievements, titles, campus info, partnerships and other info. <br>
+<br>
+```NOTE: this script will take time while running depending of the number of users in the campus, for example if there is 900 users registered in the campus it will take one our to finish```<br>
+<br>
 The final result will be in the folder ``` pretty ``` as I get the users first in one line in a JSON file and then transfer them using the command jq to a prettier JSON form.
+<br>
 
 ## QuickStart
 To run the script run the command and wait😴
