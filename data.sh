@@ -2,8 +2,8 @@
 
 source .env
 
-mkdir users
-mkdir pretty
+mkdir users  > /dev/null 2>&1
+mkdir pretty > /dev/null 2>&1
 
 function get_token {
   local response=$(curl -s -X POST \
@@ -47,7 +47,9 @@ function get_all_info {
 
 TOKEN=$(get_token)
 
+printf "\033[36mgetting users login...\n\033[0m"
 USERS=$(get_users)
+printf "\033[32mloading users...\n\033[0m"
 ALL_INFO=$(get_all_info "${USERS[@]}")
 
 echo "$ALL_INFO" > all_info.json
